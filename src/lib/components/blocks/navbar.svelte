@@ -46,7 +46,7 @@
 				<li>
 					<a
 						href="#"
-						class="block rounded bg-blue-700 px-3 py-2 text-[#05A987] md:bg-transparent md:p-0 md:text-[#05A987] md:dark:text-[#05A987]"
+						class="block rounded bg-[#05A987] px-3 py-2 text-white md:bg-transparent md:p-0 md:text-[#05A987] md:dark:text-[#05A987]"
 						aria-current="page">Home</a
 					>
 				</li>
