@@ -27,10 +27,7 @@
 		</div>
 	</div>
 
-	<div
-		class="absolute mt-8 flex -translate-x-1/2 -translate-y-1/2 transform items-center justify-center"
-		style="top: 250px; left: 50%;"
-	>
+	<div class="mx-auto mt-8 flex items-center justify-center" style="top: 250px; left: 50%;">
 		<button
 			type="button"
 			class="flex items-center space-x-2 rounded-lg bg-[#05A987] px-4 py-2 text-center text-sm font-medium text-white hover:bg-[#05A987] focus:outline-none focus:ring-4 focus:ring-[#05A987] dark:bg-[#05A987] dark:hover:bg-[#05A987] dark:focus:ring-[#05A987]"
