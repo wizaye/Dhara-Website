@@ -10,10 +10,14 @@ const config: Config = {
 			center: true,
 			padding: "2rem",
 			screens: {
-				"2xl": "1400px"
+				"2xl": "1400px",
 			}
 		},
 		extend: {
+			screens: {
+				'2xl': '1400px',
+				'xs': '420px'
+			}, // This was the only one that worked!
 			colors: {
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
