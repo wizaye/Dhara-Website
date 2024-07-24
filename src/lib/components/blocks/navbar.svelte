@@ -1,5 +1,6 @@
 <script>
 	import { Download, Menu } from 'lucide-svelte';
+	import Dhara from '$lib/img/Dhara.svelte';
 	let navOpen = false;
 </script>
 
@@ -7,17 +8,20 @@
 	class="fixed start-0 top-0 z-20 w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900"
 >
 	<div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
-		<a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-			<img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-			<span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
-				>Flowbite</span
+		<a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+			<span class="size-6">
+				<Dhara />
+			</span>
+			<span
+				class="self-center whitespace-nowrap text-2xl font-semibold text-[#05A987] dark:text-[#05A987]"
+				>Dhara</span
 			>
 		</a>
 		<div class="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
 			<button
 				type="button"
-				class="rounded-lg bg-[#05A987] px-4 py-2 text-center text-sm font-medium text-white hover:bg-[#05A987] focus:outline-none focus:ring-4 focus:ring-[#05A987] dark:bg-[#05A987] dark:hover:bg-[#05A987] dark:focus:ring-[#05A987]"
-				>Get the App <span><Download /></span></button
+				class="flex items-center space-x-2 rounded-lg bg-[#05A987] px-4 py-2 text-center text-sm font-medium text-white hover:bg-[#05A987] focus:outline-none focus:ring-4 focus:ring-[#05A987] dark:bg-[#05A987] dark:hover:bg-[#05A987] dark:focus:ring-[#05A987]"
+				>Get the App <span class="pl-2"><Download size={18} /></span></button
 			>
 			<button
 				data-collapse-toggle="navbar-sticky"
