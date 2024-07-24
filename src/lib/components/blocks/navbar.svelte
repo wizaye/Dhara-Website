@@ -20,11 +20,6 @@
 		</a>
 		<div class="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
 			<button
-				type="button"
-				class="flex items-center space-x-2 rounded-lg bg-[#05A987] px-4 py-2 text-center text-sm font-medium text-white hover:bg-[#05A987] focus:outline-none focus:ring-4 focus:ring-[#05A987] dark:bg-[#05A987] dark:hover:bg-[#05A987] dark:focus:ring-[#05A987]"
-				>Get the App <span class="pl-2"><Download size={18} /></span></button
-			>
-			<button
 				data-collapse-toggle="navbar-sticky"
 				type="button"
 				class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
@@ -42,7 +37,7 @@
 			id="navbar-sticky"
 		>
 			<ul
-				class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse"
+				class="mt-4 flex flex-col items-center rounded-lg border border-gray-100 bg-gray-50 p-4 text-center font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse"
 			>
 				<!-- <li>
 					<a
@@ -60,6 +55,11 @@
 						>
 					</li>
 				{/each}
+				<button
+					type="button"
+					class="mx-auto flex w-full items-center justify-center space-x-2 rounded-lg bg-[#05A987] px-4 py-2 text-center text-sm font-medium text-white hover:bg-[#05A987] focus:outline-none focus:ring-4 focus:ring-[#05A987] dark:bg-[#05A987] dark:hover:bg-[#05A987] dark:focus:ring-[#05A987] md:w-fit"
+					>Get the App <span class="pl-2"><Download size={18} /></span></button
+				>
 			</ul>
 		</div>
 	</div>
