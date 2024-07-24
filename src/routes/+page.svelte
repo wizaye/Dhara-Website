@@ -7,6 +7,8 @@
 	import Cart from '@/img/cart.svelte';
 	import Shop from '@/img/shop.svelte';
 	import { Play } from 'lucide-svelte';
+	import Sec3 from '$lib/img/Sec3.svelte';
+	import { ScrollText, Shrink, Puzzle, ClockArrowUp, SearchCheck } from 'lucide-svelte';
 </script>
 
 <Navbar />
@@ -33,9 +35,7 @@
 	</div>
 
 	<div class="mb-4">
-		<p class="text-center text-2xl text-[#05A987] md:text-3xl lg:text-6xl lg:text-gray-500">
-			A Fintech Innovation
-		</p>
+		<p class="text-center text-6xl text-gray-500">A Fintech Innovation</p>
 	</div>
 
 	<div class="flex justify-center">
@@ -70,5 +70,48 @@
 				><Play class="fill-white" strokeWidth={1} size={12} absoluteStrokeWidth={true} /></span
 			></button
 		>
+	</div>
+	<div>
+		<p class="mx-auto max-w-2xl text-center text-lg text-gray-500">
+			Transforming Supply Chain Finance with Programmable Digital Assets. Bridging the Liquidity Gap
+			in Global Supply Chains.
+		</p>
+	</div>
+</section>
+
+<section>
+	<div class="bg-white p-8">
+		<div class="flex flex-row justify-items-stretch">
+			<div class="basic-1/2">
+				<h1 class="mb-4 text-3xl font-bold">The Programmable Supply Chain Revolution</h1>
+				<p class="mb-6">
+					At the core of Deep Financing Tokens (DFT) is the programmable supply chain, leveraging
+					blockchain for unmatched flexibility and efficiency in supply chain finance.
+				</p>
+			</div>
+			<div class="basic-1/2"><Sec3 /></div>
+		</div>
+		<div class="grid grid-cols-1 justify-items-stretch gap-6 py-4 md:grid-cols-2">
+			<div class="flex items-center space-x-4">
+				<div class="rounded-lg bg-[#DEF7EC] p-4"><ScrollText color="#28a745" /></div>
+				<span>Smart Contracts Automate Token Management in Supply Chains</span>
+			</div>
+			<div class="flex items-center space-x-4">
+				<div class="rounded-lg bg-[#FEE2E2] p-4"><ClockArrowUp color="#ff434d" /></div>
+				<span>DFT: Programmable Design Enables Real-Time Supply Chain Payments</span>
+			</div>
+			<div class="flex items-center space-x-4">
+				<div class="rounded-lg bg-[#D1FAE5] p-4"><Shrink color="#05a987" /></div>
+				<span>Financial Inclusion via Programmable Supply Chains</span>
+			</div>
+			<div class="flex items-center space-x-4">
+				<div class="rounded-lg bg-[#EDE9FE] p-4"><SearchCheck color="#855cfe" /></div>
+				<span>Blockchain Ledger & DFT: Transparency for Efficient Supply Chain Finance</span>
+			</div>
+			<div class="flex items-center space-x-4">
+				<div class="rounded-lg bg-[#FFE4E6] p-4"><Puzzle color="#f9942f" /></div>
+				<span>DFT Integrates Supply Chain and Finance via APIs</span>
+			</div>
+		</div>
 	</div>
 </section>

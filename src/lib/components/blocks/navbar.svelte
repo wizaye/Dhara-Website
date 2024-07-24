@@ -15,8 +15,7 @@
 			</span>
 			<span
 				class="self-center whitespace-nowrap text-2xl font-semibold text-[#05A987] dark:text-[#05A987]"
-				>Dhara</span
-			>
+				>Dhara</span>
 		</a>
 		<div class="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
 			<button
@@ -49,7 +48,7 @@
 				{#each navItems as item}
 					<li>
 						<a
-							href="#"
+							href="//"
 							class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-[#05A987] md:dark:hover:bg-transparent md:dark:hover:text-[#05A987]"
 							>{item}</a
 						>
