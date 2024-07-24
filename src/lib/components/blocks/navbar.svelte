@@ -1,6 +1,7 @@
-<script>
+<script lang="ts">
 	import { Download, Menu } from 'lucide-svelte';
 	import Dhara from '$lib/img/Dhara.svelte';
+	let navItems: string[] = ['About Us', 'Services', 'Contact Us', 'Blog'];
 	let navOpen = false;
 </script>
 
@@ -43,34 +44,22 @@
 			<ul
 				class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse"
 			>
-				<li>
+				<!-- <li>
 					<a
 						href="#"
 						class="block rounded bg-[#05A987] px-3 py-2 text-white md:bg-transparent md:p-0 md:text-[#05A987] md:dark:text-[#05A987]"
 						aria-current="page">Home</a
 					>
-				</li>
-				<li>
-					<a
-						href="#"
-						class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-[#05A987] md:dark:hover:bg-transparent md:dark:hover:text-[#05A987]"
-						>About</a
-					>
-				</li>
-				<li>
-					<a
-						href="#"
-						class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-[#05A987] md:dark:hover:bg-transparent md:dark:hover:text-[#05A987]"
-						>Services</a
-					>
-				</li>
-				<li>
-					<a
-						href="#"
-						class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-[#05A987] md:dark:hover:bg-transparent md:dark:hover:text-[#05A987]"
-						>Contact</a
-					>
-				</li>
+				</li> -->
+				{#each navItems as item}
+					<li>
+						<a
+							href="#"
+							class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-[#05A987] md:dark:hover:bg-transparent md:dark:hover:text-[#05A987]"
+							>{item}</a
+						>
+					</li>
+				{/each}
 			</ul>
 		</div>
 	</div>
