@@ -14,20 +14,21 @@ const config: Config = {
       },
     },
     extend: {
-		animation: {
-			'scroll-svg': 'scroll-svg 25s linear infinite',
-		  },
-		keyframes: {
-			'scroll-svg': {
-			  '0%': { transform: 'translateX(100%)' },
-			  '100%': { transform: 'translateX(-100%)' },
-			},
-		},
+      animation: {
+        'scroll-svg': 'scroll-svg 25s linear infinite',
+      },
+      keyframes: {
+        'scroll-svg': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
       screens: {
         '2xl': '1400px',
         'xs': '420px',
       },
       colors: {
+        'dharateal': '#05A987',
         border: 'hsl(var(--border) / <alpha-value>)',
         input: 'hsl(var(--input) / <alpha-value>)',
         ring: 'hsl(var(--ring) / <alpha-value>)',

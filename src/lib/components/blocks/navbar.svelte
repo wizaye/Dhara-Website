@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { Download, Menu,X} from 'lucide-svelte';
+	import { Download, Menu, X } from 'lucide-svelte';
 	import Dhara from '$lib/img/Dhara.svelte';
-	let navItems: string[] = ['About Us', 'Services', 'Contact Us', 'Blog'];
+	import { navItems } from '@/index';
 	let navOpen = false;
-	
+
 	// Reactive statement to determine if the current route matches the item
 	$: isActive = (item: string) => {
 		const routeId = $page.url.pathname;
@@ -20,16 +20,14 @@
 	};
 </script>
 
-<nav
-	class="fixed start-0 top-0 z-20 w-full  bg-white dark:border-gray-600 dark:bg-gray-900"
->
+<nav class="fixed start-0 top-0 z-20 w-full bg-white dark:border-gray-600 dark:bg-gray-900">
 	<div class="mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between p-4">
 		<a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
 			<span class="size-6">
 				<Dhara />
 			</span>
 			<span
-				class="self-center whitespace-nowrap text-2xl font-semibold text-[#05A987] dark:text-[#05A987]"
+				class="text-dharateal dark:text-dharateal self-center whitespace-nowrap text-2xl font-semibold"
 				>Dhara</span
 			>
 		</a>
@@ -43,29 +41,34 @@
 				on:click={() => (navOpen = !navOpen)}
 			>
 				{#if navOpen}
-				<X />
-			{:else}
-				<Menu />
-			{/if}
+					<X />
+				{:else}
+					<Menu />
+				{/if}
 				<span class="sr-only">Open main menu</span>
 			</button>
 		</div>
-		<div class={`w-full items-center justify-between md:order-2 md:flex md:w-auto ${navOpen ? '' : 'hidden'}`} id="navbar-sticky">
-			<ul class="mt-4 flex flex-col items-center p-4 text-center font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse h-screen md:h-auto overflow-hidden">
+		<div
+			class={`w-full items-center justify-between md:order-2 md:flex md:w-auto ${navOpen ? '' : 'hidden'}`}
+			id="navbar-sticky"
+		>
+			<ul
+				class="mt-4 flex h-screen flex-col items-center overflow-hidden p-4 text-center font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:h-auto md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse"
+			>
 				{#each navItems as item}
 					<li class="my-1">
 						<a
 							href={item.toLowerCase().split(' ').join('-')}
 							class={isActive(item)
-								? 'block rounded bg-[#05A987] px-3 py-2 text-white md:bg-transparent md:p-0 md:text-[#05A987] md:dark:text-[#05A987]'
-								: 'block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-[#05A987] md:dark:hover:bg-transparent md:dark:hover:text-[#05A987]'}
+								? 'bg-dharateal md:text-dharateal md:dark:text-dharateal block rounded px-3 py-2 text-white md:bg-transparent md:p-0'
+								: 'md:hover:text-dharateal md:dark:hover:text-dharateal block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent'}
 							>{item}</a
 						>
 					</li>
 				{/each}
 				<button
 					type="button"
-					class="mx-auto flex w-full items-center justify-center space-x-2 rounded-lg bg-[#05A987] px-4 py-2 text-center text-sm font-medium text-white hover:bg-[#05A987] focus:outline-none focus:ring-4 focus:ring-[#05A987] dark:bg-[#05A987] dark:hover:bg-[#05A987] dark:focus:ring-[#05A987] md:w-fit"
+					class="bg-dharateal hover:bg-dharateal focus:ring-dharateal dark:bg-dharateal dark:hover:bg-dharateal dark:focus:ring-dharateal mx-auto flex w-full items-center justify-center space-x-2 rounded-lg px-4 py-2 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 md:w-fit"
 				>
 					Get the App <span class="pl-2"><Download size={18} /></span>
 				</button>

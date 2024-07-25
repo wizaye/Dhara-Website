@@ -31,7 +31,7 @@
 
 	<div class="mb-4">
 		<p
-			class="mx-auto mb-4 text-center text-2xl text-[#05A987] md:text-3xl lg:mt-8 lg:text-6xl lg:text-gray-500"
+			class="text-dharateal mx-auto mb-4 text-center text-2xl md:text-3xl lg:mt-8 lg:text-6xl lg:text-gray-500"
 		>
 			A Fintech Innovation
 		</p>
@@ -52,7 +52,7 @@
 
 			<div class="mx-auto mt-8 flex items-center justify-center space-x-3 xs:mt-12 lg:mt-8">
 				<button
-					class="flex w-fit items-center rounded-lg bg-[#05A987] p-2 text-center text-xs font-medium text-white hover:bg-[#05A987] focus:outline-none focus:ring-4 focus:ring-[#05A987] dark:bg-[#05A987] dark:hover:bg-[#05A987] dark:focus:ring-[#05A987] lg:p-3 lg:text-base"
+					class="bg-dharateal hover:bg-dharateal focus:ring-dharateal dark:bg-dharateal dark:hover:bg-dharateal dark:focus:ring-dharateal flex w-fit items-center rounded-lg p-2 text-center text-xs font-medium text-white focus:outline-none focus:ring-4 lg:p-3 lg:text-base"
 				>
 					Book a Demo
 				</button>
@@ -61,7 +61,7 @@
 					class="mx-3 flex items-center justify-center space-x-2 rounded-lg bg-white px-4 py-2"
 				>
 					How it works
-					<span class="ml-2 rounded-full bg-[#05A987] p-1">
+					<span class="bg-dharateal ml-2 rounded-full p-1">
 						<Play class="fill-white" strokeWidth={1} size={12} absoluteStrokeWidth={true} />
 					</span>
 				</button>
