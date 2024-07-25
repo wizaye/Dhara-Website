@@ -57,7 +57,7 @@
 		</div>
 	</div>
 
-	<div class="mx-10 mt-12 flex items-center justify-center lg:mx-auto lg:mt-8">
+	<div class="xs:mt-12 mx-6 mt-8 flex items-center justify-center lg:mx-auto lg:mt-8">
 		<button
 			type="button"
 			class="flex items-center rounded-lg bg-[#05A987] p-2 text-center text-xs font-medium text-white hover:bg-[#05A987] focus:outline-none focus:ring-4 focus:ring-[#05A987] dark:bg-[#05A987] dark:hover:bg-[#05A987] dark:focus:ring-[#05A987] lg:p-3"
@@ -66,11 +66,13 @@
 		</button>
 
 		<button class="mx-3 flex items-center justify-center space-x-2 rounded-lg bg-white px-4 py-2">
-			How it works <span class="ml-2 rounded-full bg-[#05A987] p-1"
-				><Play class="fill-white" strokeWidth={1} size={12} absoluteStrokeWidth={true} /></span
-			></button
-		>
+			How it works
+			<span class="ml-2 rounded-full bg-[#05A987] p-1">
+				<Play class="fill-white" strokeWidth={1} size={12} absoluteStrokeWidth={true} />
+			</span>
+		</button>
 	</div>
+
 	<div>
 		<p class="mx-auto max-w-2xl text-center text-lg text-gray-500">
 			Transforming Supply Chain Finance with Programmable Digital Assets. Bridging the Liquidity Gap
@@ -81,15 +83,24 @@
 
 <section>
 	<div class="bg-white p-8">
-		<div class="flex flex-row justify-items-stretch">
-			<div class="basic-1/2">
-				<h1 class="mb-4 text-3xl font-bold">The Programmable Supply Chain Revolution</h1>
+		<div class="flex flex-col justify-between lg:flex-row lg:px-12">
+			<div class="lg:max-w-lg">
+				<h1 class="mb-4 text-2xl font-semibold lg:text-4xl lg:leading-normal">
+					The Programmable Supply Chain Revolution
+				</h1>
 				<p class="mb-6">
 					At the core of Deep Financing Tokens (DFT) is the programmable supply chain, leveraging
 					blockchain for unmatched flexibility and efficiency in supply chain finance.
 				</p>
 			</div>
-			<div class="basic-1/2"><Sec3 /></div>
+			<div class="order-first mx-auto size-full justify-center lg:order-none lg:mx-0 lg:max-w-lg">
+				<span class="lg:hidden">
+					<Sec3 width="fit" height="fit" />
+				</span>
+				<span class="hidden lg:block">
+					<Sec3 />
+				</span>
+			</div>
 		</div>
 		<div class="grid grid-cols-1 justify-items-stretch gap-6 py-4 md:grid-cols-2">
 			<div class="flex items-center space-x-4">
