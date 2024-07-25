@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Building from './../lib/img/building.svelte';
-	import TruckKun from './../lib/img/truck-kun.svelte';
+	import Building from '@/img/building.svelte';
+	import TruckKun from '@/img/truck-kun.svelte';
 	import IconWrapper from '@/components/blocks/IconWrapper.svelte';
 	import leftGif from '@/img/b3151c0a6afdefc2137c73255408a557-ezgif.com-crop.gif';
 	import rightGif from '@/img/111abeed6207fb60b16fc333a023d217-ezgif.com-crop.gif';
