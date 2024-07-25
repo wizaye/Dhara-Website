@@ -8,7 +8,7 @@ The design specifications for the landing page are detailed in the following Fig
 
 - **Dhara Website:** [Figma Link](https://www.figma.com/design/H3RlTOuGCU6OctkLzokVf2/Ganak-%26-Dhara-COPY?node-id=3-2297&t=F0ZNjcJh9S2lmYu5-0)
 
-Additionally, the live website can be accessed at [https://dhara-website.netlify.app/](https://dhara-website.netlify.app/).
+- **Live Website:** [https://dhara-website.netlify.app/](https://dhara-website.netlify.app/).
 
 ## Development Tools
 
