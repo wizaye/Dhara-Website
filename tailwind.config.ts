@@ -14,6 +14,15 @@ const config: Config = {
       },
     },
     extend: {
+		animation: {
+			'scroll-svg': 'scroll-svg 25s linear infinite',
+		  },
+		keyframes: {
+			'scroll-svg': {
+			  '0%': { transform: 'translateX(100%)' },
+			  '100%': { transform: 'translateX(-100%)' },
+			},
+		},
       screens: {
         '2xl': '1400px',
         'xs': '420px',
