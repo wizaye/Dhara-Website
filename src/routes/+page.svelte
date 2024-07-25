@@ -10,6 +10,8 @@
 	import { Play } from 'lucide-svelte';
 	import Sec3 from '@/img/Sec3.svelte';
 	import { ScrollText, Shrink, Puzzle, ClockArrowUp, SearchCheck } from 'lucide-svelte';
+	import Footer from '@/components/blocks/footer.svelte';
+	import Scroller from '@/components/blocks/scroller.svelte';
 </script>
 
 <section class="relative mx-auto px-4 py-8">
@@ -121,3 +123,5 @@
 		</div>
 	</div>
 </section>
+<Footer/>
+<Scroller/>

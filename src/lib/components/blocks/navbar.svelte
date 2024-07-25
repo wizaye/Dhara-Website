@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { Download, Menu } from 'lucide-svelte';
+	import { Download, Menu,X} from 'lucide-svelte';
 	import Dhara from '$lib/img/Dhara.svelte';
 	let navItems: string[] = ['About Us', 'Services', 'Contact Us', 'Blog'];
 	let navOpen = false;
-
+	
 	// Reactive statement to determine if the current route matches the item
 	$: isActive = (item: string) => {
 		const routeId = $page.url.pathname;
@@ -21,7 +21,7 @@
 </script>
 
 <nav
-	class="fixed start-0 top-0 z-20 w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900"
+	class="fixed start-0 top-0 z-20 w-full  bg-white dark:border-gray-600 dark:bg-gray-900"
 >
 	<div class="mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between p-4">
 		<a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -42,27 +42,18 @@
 				aria-expanded="false"
 				on:click={() => (navOpen = !navOpen)}
 			>
+				{#if navOpen}
+				<X />
+			{:else}
 				<Menu />
+			{/if}
 				<span class="sr-only">Open main menu</span>
 			</button>
 		</div>
-		<div
-			class:hidden={!navOpen}
-			class=" w-full items-center justify-between md:order-2 md:flex md:w-auto"
-			id="navbar-sticky"
-		>
-			<ul
-				class="mt-4 flex flex-col items-center rounded-lg border border-gray-100 bg-gray-50 p-4 text-center font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse"
-			>
-				<!-- <li>
-					<a
-						href="#"
-						class="block rounded bg-[#05A987] px-3 py-2 text-white md:bg-transparent md:p-0 md:text-[#05A987] md:dark:text-[#05A987]"
-						aria-current="page">Home</a
-					>
-				</li> -->
+		<div class={`w-full items-center justify-between md:order-2 md:flex md:w-auto ${navOpen ? '' : 'hidden'}`} id="navbar-sticky">
+			<ul class="mt-4 flex flex-col items-center p-4 text-center font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse h-screen md:h-auto overflow-hidden">
 				{#each navItems as item}
-					<li>
+					<li class="my-1">
 						<a
 							href={item.toLowerCase().split(' ').join('-')}
 							class={isActive(item)
@@ -74,9 +65,10 @@
 				{/each}
 				<button
 					type="button"
-					class={'mx-auto flex w-full items-center justify-center space-x-2 rounded-lg bg-[#05A987] px-4 py-2 text-center text-sm font-medium text-white hover:bg-[#05A987] focus:outline-none focus:ring-4 focus:ring-[#05A987] dark:bg-[#05A987] dark:hover:bg-[#05A987] dark:focus:ring-[#05A987] md:w-fit'}
-					>Get the App <span class="pl-2"><Download size={18} /></span></button
+					class="mx-auto flex w-full items-center justify-center space-x-2 rounded-lg bg-[#05A987] px-4 py-2 text-center text-sm font-medium text-white hover:bg-[#05A987] focus:outline-none focus:ring-4 focus:ring-[#05A987] dark:bg-[#05A987] dark:hover:bg-[#05A987] dark:focus:ring-[#05A987] md:w-fit"
 				>
+					Get the App <span class="pl-2"><Download size={18} /></span>
+				</button>
 			</ul>
 		</div>
 	</div>
