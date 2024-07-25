@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Building from './../lib/img/building.svelte';
+	import TruckKun from './../lib/img/truck-kun.svelte';
 	import IconWrapper from '@/components/blocks/IconWrapper.svelte';
 	import leftGif from '@/img/b3151c0a6afdefc2137c73255408a557-ezgif.com-crop.gif';
 	import rightGif from '@/img/111abeed6207fb60b16fc333a023d217-ezgif.com-crop.gif';
@@ -6,7 +8,7 @@
 	import MobileLeft from '@/img/mobile-left.svelte';
 	import Cart from '@/img/cart.svelte';
 	import Shop from '@/img/shop.svelte';
-	import { Play } from 'lucide-svelte';
+	import { Play, Truck } from 'lucide-svelte';
 	import PhoneSmall from '@/img/Phone-Section-Mobile.svelte';
 	import PhoneBig from '@/img/Phone-Section-Desktop.svelte';
 </script>
@@ -73,15 +75,21 @@
 			<img src={rightGif} alt="GIF 2" class="relative hidden w-full lg:mt-16 lg:block" />
 		</div>
 	</div>
-	<div class="mx-auto my-5 flex justify-center lg:my-16">
-		<span class="lg:hidden">
+	<!-- Phone Section -->
+	<div class="mx-auto my-2 flex flex-col justify-center space-y-5 lg:my-16">
+		<span class="mx-auto lg:hidden">
 			<PhoneSmall />
 		</span>
-		<span class="hidden lg:block">
+		<span class="mx-auto hidden lg:block">
 			<PhoneBig />
 		</span>
-		<IconWrapper>
-			<Shop />
-		</IconWrapper>
+		<div class="flex justify-between">
+			<IconWrapper>
+				<Building />
+			</IconWrapper>
+			<IconWrapper>
+				<TruckKun />
+			</IconWrapper>
+		</div>
 	</div>
 </section>

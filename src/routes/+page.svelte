@@ -10,12 +10,12 @@
 
 <MainHeaderSection />
 
-<span
+<button
 	class="border-dharateal mx-auto flex w-fit justify-center space-x-3 rounded-md border p-2 uppercase"
 >
 	<Info class="text-dharateal" />
 	<p>problems</p>
-</span>
+</button>
 
 <DFTFeaturesOverview />
 <Footer />
