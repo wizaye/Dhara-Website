@@ -83,7 +83,7 @@
 		<span class="mx-auto hidden lg:block">
 			<PhoneBig />
 		</span>
-		<div class="flex justify-between">
+		<div class="flex justify-between px-12">
 			<IconWrapper>
 				<Building />
 			</IconWrapper>
