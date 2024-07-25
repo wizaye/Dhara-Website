@@ -1,126 +1,22 @@
 <script lang="ts">
-	import IconWrapper from '@/components/blocks/IconWrapper.svelte';
-	import leftGif from '@/img/b3151c0a6afdefc2137c73255408a557-ezgif.com-crop.gif';
-	import rightGif from '@/img/111abeed6207fb60b16fc333a023d217-ezgif.com-crop.gif';
-	import MobileRight from '@/img/mobile-right.svelte';
-	import MobileLeft from '@/img/mobile-left.svelte';
-	import Cart from '@/img/cart.svelte';
-	import Shop from '@/img/shop.svelte';
-	import { Play } from 'lucide-svelte';
+	import DFTFeaturesOverview from './DFTFeaturesOverview.svelte';
+
+	import MainHeaderSection from './MainHeaderSection.svelte';
 	import Sec3 from '@/img/Sec3.svelte';
-	import { ScrollText, Shrink, Puzzle, ClockArrowUp, SearchCheck } from 'lucide-svelte';
+	import { ScrollText, Shrink, Puzzle, ClockArrowUp, SearchCheck, Info } from 'lucide-svelte';
 	import Footer from '@/components/blocks/footer.svelte';
 	import Scroller from '@/components/blocks/scroller.svelte';
 </script>
 
-<section class="relative mx-auto px-4 py-8">
-	<div class="flex justify-between">
-		<IconWrapper>
-			<Cart />
-		</IconWrapper>
+<MainHeaderSection />
 
-		<h1
-			class="mx-auto mb-4 mt-5 text-center text-2xl font-bold text-black md:text-3xl lg:mt-8 lg:text-6xl lg:text-gray-500"
-		>
-			Deep Financing Tokens
-		</h1>
-		<IconWrapper>
-			<Shop />
-		</IconWrapper>
-	</div>
+<span
+	class="border-dharateal mx-auto flex w-fit justify-center space-x-3 rounded-md border p-2 uppercase"
+>
+	<Info class="text-dharateal" />
+	<p>problems</p>
+</span>
 
-	<div class="mb-4">
-		<p
-			class="text-dharateal mx-auto mb-4 text-center text-2xl md:text-3xl lg:mt-8 lg:text-6xl lg:text-gray-500"
-		>
-			A Fintech Innovation
-		</p>
-	</div>
-
-	<div class="flex justify-center">
-		<div class="mr-4 w-1/2">
-			<img src={leftGif} alt="GIF 1" class="relative hidden w-full lg:mt-16 lg:block" />
-		</div>
-		<div class="absolute left-0 h-fit lg:hidden">
-			<MobileLeft />
-		</div>
-		<div class="xl:mt-[3.4vw]">
-			<p class="max-w-2xl text-center text-sm font-normal text-gray-500 lg:text-lg">
-				Transforming Supply Chain Finance with Programmable Digital Assets. Bridging the Liquidity
-				Gap in Global Supply Chains.
-			</p>
-
-			<div class="mx-auto mt-8 flex items-center justify-center space-x-3 xs:mt-12 lg:mt-8">
-				<button
-					class="bg-dharateal hover:bg-dharateal focus:ring-dharateal dark:bg-dharateal dark:hover:bg-dharateal dark:focus:ring-dharateal flex w-fit items-center rounded-lg p-2 text-center text-xs font-medium text-white focus:outline-none focus:ring-4 lg:p-3 lg:text-base"
-				>
-					Book a Demo
-				</button>
-
-				<button
-					class="mx-3 flex items-center justify-center space-x-2 rounded-lg bg-white px-4 py-2"
-				>
-					How it works
-					<span class="bg-dharateal ml-2 rounded-full p-1">
-						<Play class="fill-white" strokeWidth={1} size={12} absoluteStrokeWidth={true} />
-					</span>
-				</button>
-			</div>
-		</div>
-
-		<div class="absolute right-0 h-fit lg:hidden">
-			<MobileRight />
-		</div>
-		<div class="ml-4 w-1/2">
-			<img src={rightGif} alt="GIF 2" class="relative hidden w-full lg:mt-16 lg:block" />
-		</div>
-	</div>
-</section>
-
-<section>
-	<div class="bg-white p-8">
-		<div class="flex flex-col justify-between lg:flex-row lg:px-12">
-			<div class="lg:max-w-lg">
-				<h1 class="mb-4 text-2xl font-semibold lg:text-4xl lg:leading-normal">
-					The Programmable Supply Chain Revolution
-				</h1>
-				<p class="mb-6">
-					At the core of Deep Financing Tokens (DFT) is the programmable supply chain, leveraging
-					blockchain for unmatched flexibility and efficiency in supply chain finance.
-				</p>
-			</div>
-			<div class="order-first mx-auto size-full justify-center lg:order-none lg:mx-0 lg:max-w-lg">
-				<span class="lg:hidden">
-					<Sec3 width="fit" height="fit" />
-				</span>
-				<span class="hidden lg:block">
-					<Sec3 />
-				</span>
-			</div>
-		</div>
-		<div class="grid grid-cols-1 justify-items-stretch gap-6 py-4 md:grid-cols-2">
-			<div class="flex items-center space-x-4">
-				<div class="rounded-lg bg-[#DEF7EC] p-4"><ScrollText color="#28a745" /></div>
-				<span>Smart Contracts Automate Token Management in Supply Chains</span>
-			</div>
-			<div class="flex items-center space-x-4">
-				<div class="rounded-lg bg-[#FEE2E2] p-4"><ClockArrowUp color="#ff434d" /></div>
-				<span>DFT: Programmable Design Enables Real-Time Supply Chain Payments</span>
-			</div>
-			<div class="flex items-center space-x-4">
-				<div class="rounded-lg bg-[#D1FAE5] p-4"><Shrink color="#05a987" /></div>
-				<span>Financial Inclusion via Programmable Supply Chains</span>
-			</div>
-			<div class="flex items-center space-x-4">
-				<div class="rounded-lg bg-[#EDE9FE] p-4"><SearchCheck color="#855cfe" /></div>
-				<span>Blockchain Ledger & DFT: Transparency for Efficient Supply Chain Finance</span>
-			</div>
-			<div class="flex items-center space-x-4">
-				<div class="rounded-lg bg-[#FFE4E6] p-4"><Puzzle color="#f9942f" /></div>
-				<span>DFT Integrates Supply Chain and Finance via APIs</span>
-			</div>
-		</div>
-	</div>
-</section>
+<DFTFeaturesOverview />
 <Footer />
 <Scroller />
