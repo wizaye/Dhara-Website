@@ -1,6 +1,5 @@
 <script lang="ts">
-	import IconWrapper from './IconWrapper.svelte';
-
+	import IconWrapper from '@/components/blocks/IconWrapper.svelte';
 	import leftGif from '@/img/b3151c0a6afdefc2137c73255408a557-ezgif.com-crop.gif';
 	import rightGif from '@/img/111abeed6207fb60b16fc333a023d217-ezgif.com-crop.gif';
 	import MobileRight from '@/img/mobile-right.svelte';
@@ -123,5 +122,5 @@
 		</div>
 	</div>
 </section>
-<Footer/>
-<Scroller/>
+<Footer />
+<Scroller />
