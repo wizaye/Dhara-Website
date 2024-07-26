@@ -18,9 +18,8 @@
 		<IconWrapper>
 			<Cart />
 		</IconWrapper>
-
 		<h1
-			class="mx-auto mb-4 mt-5 text-center text-2xl font-bold text-black md:text-3xl lg:mt-8 lg:text-6xl lg:text-gray-500"
+			class="mx-auto mb-4 mt-5 text-center text-4xl font-sans leading-10 text-black md:text-3xl lg:mt-8 lg:text-6xl"
 		>
 			Deep Financing Tokens
 		</h1>
@@ -31,7 +30,7 @@
 
 	<div class="mb-4">
 		<p
-			class="text-dharateal mx-auto mb-4 text-center text-2xl md:text-3xl lg:mt-8 lg:text-6xl lg:text-gray-500"
+			class="text-dharateal mx-auto mb-4 text-center text-2xl md:text-3xl lg:mt-8 lg:text-6xl"
 		>
 			A Fintech Innovation
 		</p>
@@ -45,7 +44,7 @@
 			<MobileLeft />
 		</div>
 		<div class="xl:mt-[3.4vw]">
-			<p class="max-w-2xl text-center text-sm font-normal text-gray-500 lg:text-lg">
+			<p class="max-w-auto text-center text-sm font-normal text-stone-500 lg:text-lg">
 				Transforming Supply Chain Finance with Programmable Digital Assets. Bridging the Liquidity
 				Gap in Global Supply Chains.
 			</p>
