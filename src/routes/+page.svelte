@@ -1,12 +1,11 @@
 <script lang="ts">
 	import DFTFeaturesOverview from './DFTFeaturesOverview.svelte';
-
 	import MainHeaderSection from './MainHeaderSection.svelte';
 	import DftFeaturesCont from './DFTFeaturesCont.svelte';
-	import Sec3 from '@/img/Sec3.svelte';
 	import { ScrollText, Shrink, Puzzle, ClockArrowUp, SearchCheck, Info } from 'lucide-svelte';
 	import Footer from '@/components/blocks/footer.svelte';
 	import Scroller from '@/components/blocks/scroller.svelte';
+	import Faq from './FAQ.svelte';
 </script>
 
 <MainHeaderSection />
@@ -20,5 +19,6 @@
 
 <DFTFeaturesOverview />
 <DftFeaturesCont />
+<Faq/>
 <Footer />
 <Scroller />
