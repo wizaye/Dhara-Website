@@ -2,6 +2,7 @@
 	import { navItems } from '@/index';
 	import { ArrowUpRight, Instagram, Linkedin } from 'lucide-svelte';
 	import Twitter from '@/img/twitter.svelte';
+	import { Link } from 'svelte-routing';
 	const links = ['Terms of Use', 'Privacy Policy', 'Contact Us'];
 </script>
 
@@ -69,9 +70,9 @@
 			</div>
 		</div>
 		<nav class="flex space-x-4">
-			<a href="#terms" class="hover:text-dharateal text-gray-800">Terms of Use</a>
-			<a href="#privacy" class="hover:text-dharateal text-gray-800">Privacy Policy</a>
-			<a href="#contact" class="hover:text-dharateal text-gray-800">Contact Us</a>
+			<a href= "/terms" class="hover:text-dharateal text-gray-800">Terms of Use</a>
+			<a href="/privacy" class="hover:text-dharateal text-gray-800">Privacy Policy</a>
+			<a href="/contact-us" class="hover:text-dharateal text-gray-800">Contact Us</a>
 		</nav>
 	</div>
 </footer>
