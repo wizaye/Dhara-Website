@@ -8,7 +8,7 @@
 	import MobileLeft from '@/img/mobile-left.svelte';
 	import Cart from '@/img/cart.svelte';
 	import Shop from '@/img/shop.svelte';
-	import { Play, Truck } from 'lucide-svelte';
+	import { Play } from 'lucide-svelte';
 	import PhoneSmall from '@/img/Phone-Section-Mobile.svelte';
 	import PhoneBig from '@/img/Phone-Section-Desktop.svelte';
 </script>
