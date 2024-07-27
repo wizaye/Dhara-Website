@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Building from './../lib/img/building.svelte';
-	import TruckKun from './../lib/img/truck-kun.svelte';
+	import Building from '@/img/building.svelte';
+	import TruckKun from '@/img/truck-kun.svelte';
 	import IconWrapper from '@/components/blocks/IconWrapper.svelte';
 	import leftGif from '@/img/b3151c0a6afdefc2137c73255408a557-ezgif.com-crop.gif';
 	import rightGif from '@/img/111abeed6207fb60b16fc333a023d217-ezgif.com-crop.gif';
@@ -8,7 +8,7 @@
 	import MobileLeft from '@/img/mobile-left.svelte';
 	import Cart from '@/img/cart.svelte';
 	import Shop from '@/img/shop.svelte';
-	import { Play, Truck } from 'lucide-svelte';
+	import { Play } from 'lucide-svelte';
 	import PhoneSmall from '@/img/Phone-Section-Mobile.svelte';
 	import PhoneBig from '@/img/Phone-Section-Desktop.svelte';
 </script>
@@ -83,7 +83,7 @@
 		<span class="mx-auto hidden lg:block">
 			<PhoneBig />
 		</span>
-		<div class="flex justify-between">
+		<div class="flex justify-between px-12">
 			<IconWrapper>
 				<Building />
 			</IconWrapper>
