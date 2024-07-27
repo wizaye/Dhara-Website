@@ -1,0 +1,152 @@
+[33mcommit 903b73c13a9e3bc39b2cb6285b921ef2aef68ebb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mrajarshi[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: AtchyuteswarGottumukkala <yt.atchyut@gmail.com>
+Date:   Wed Jul 24 23:32:23 2024 +0530
+
+    Update of Package-lock
+
+[33mcommit d01bd751ea36a9b2b919d4d7eea8c9736dda4cbb[m
+Author: AtchyuteswarGottumukkala <yt.atchyut@gmail.com>
+Date:   Wed Jul 24 23:30:30 2024 +0530
+
+    Addition of Sec3
+
+[33mcommit 4fb38c76bb487549dc82658882fb7033deb6bfd3[m
+Merge: 5d704d0 37b85d9
+Author: AtchyuteswarGottumukkala <yt.atchyut@gmail.com>
+Date:   Wed Jul 24 23:29:06 2024 +0530
+
+    Addition of Sec3
+
+[33mcommit 5d704d027a1ce5e63c31c7d9199d4b7e8b3eb646[m
+Author: AtchyuteswarGottumukkala <yt.atchyut@gmail.com>
+Date:   Wed Jul 24 23:26:02 2024 +0530
+
+    addition of Sec3
+
+[33mcommit 37b85d97411bb249d6cd4cd659e3016a69574f55[m
+Author: Michael Obubelebra Amachree <amachree9630@gmail.com>
+Date:   Wed Jul 24 18:19:03 2024 +0100
+
+    🎨 (navbar.svelte): Update UI to center the "Get the App" button in the navbar
+    🍱 (img): Add new images for cart, shop, mobile-left, and mobile-right icons
+    🧱 (page.svelte): Improve user experience by updating design of the product page section and adding new icons for cart and shop functionality
+    🔥 (static): Remove file "Frame 1973341766.png" from the static directory
+
+[33mcommit 2324bbf4c509c94181b3b7ee999a8e4869080659[m
+Author: Michael Obubelebra Amachree <amachree9630@gmail.com>
+Date:   Wed Jul 24 17:20:43 2024 +0100
+
+    Package update
+
+[33mcommit a298319dc6891d91e2389e3fa16712f20104137d[m
+Author: Michael Obubelebra Amachree <amachree9630@gmail.com>
+Date:   Wed Jul 24 17:14:56 2024 +0100
+
+    🎨: Improve structure / format of the code
+    
+    Improve the structure and format of thepage.svelte:
+    - Simplified the layout positioning by unnecessary transform for better alignment and readability.
+
+[33mcommit 3ab6d755b1b874773d21a816627c74abc4e712ca[m
+Merge: be1820c 3de9d99
+Author: Michael Obubelebra Amachree <amachree9630@gmail.com>
+Date:   Wed Jul 24 16:54:43 2024 +0100
+
+    Merge pull request #1 from PRD-for-Dhara/rajarshi
+    
+    Added further sections
+
+[33mcommit 3de9d99a9b647e18be920f47f8c0cf7d06310be3[m[33m ([m[1;31morigin/rajarshi[m[33m)[m
+Author: Michael Obubelebra Amachree <amachree9630@gmail.com>
+Date:   Wed Jul 24 15:41:49 2024 +0000
+
+    🚚 (assets): move GIF images from static folder to src/lib/img folder for better organization
+    🎨 (routes): update image paths in +page.svelte to use imported images for better resource management and loading efficiency
+    🎨 (routes): improve button styling and structure in +page.svelte for better user experience and consistency
+
+[33mcommit ca9dea3dccd57548feb9d2a45707df1998bd9aae[m[33m ([m[1;32mmain[m[33m)[m
+Merge: 92ad8c5 be1820c
+Author: Raj9101 <21051237@kiit.ac.in>
+Date:   Wed Jul 24 19:49:00 2024 +0530
+
+    added further sections
+
+[33mcommit 92ad8c510d60df6d42e0cb07178f9564044f9af4[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Raj9101 <21051237@kiit.ac.in>
+Date:   Wed Jul 24 19:43:39 2024 +0530
+
+    added further sections
+
+[33mcommit be1820c1f84ce9c4633f648963e00de8c8d9c831[m
+Author: Michael Obubelebra Amachree <amachree9630@gmail.com>
+Date:   Wed Jul 24 09:28:20 2024 +0100
+
+    🎨 Improve structure / format of the code
+    
+    Refactor navbar component to:
+    - Updated script language to TypeScript for better type checking
+     using an array
+    - Commented out static navigation items for future reference
+
+[33mcommit 7651f1779c033737af1786e19cbbb736dcfa2835[m
+Author: Michael Obubelebra Amachree <amachree9630@gmail.com>
+Date:   Wed Jul 24 09:22:36 2024 +0100
+
+    🎨 (navbar.svelte): Change the background color and text color classes for the Home link in the navbar to improve visual consistency.
+
+[33mcommit 00b33b152a3623861c143ee78f25e13497864e70[m
+Author: Michael Obubelebra Amachree <amachree9630@gmail.com>
+Date:   Wed Jul 24 09:18:53 2024 +0100
+
+    ✨ (navbar.svelte): Add Dhara component to navbar for logo representation
+    🔧 (navbar.svelte): Update navbar logo and text to use Dhara branding
+    🎨 (navbar.svelte): Improve UI of navbar by adding Dhara logo and updating styles
+    📝 (navbar.svelte, Dhara.svelte): Add Dhara logo component for branding and update navbar UI to include it
+    🚀 (page.svelte): Update page content to reflect new branding and messaging for Dhara project
+
+[33mcommit f805351a9a78492996ebab59fb55ead3e5f11661[m
+Author: Michael Obubelebra Amachree <amachree9630@gmail.com>
+Date:   Wed Jul 24 08:53:42 2024 +0100
+
+    ✨: Update navbar style and functionality
+    
+    Added lucide-svelte icons for menu and download button to enhance UI
+    
+    Changes:
+    - Updated navbar styles for better readability
+    - Added lucide-svelte icons for menu and download button
+    - Made navbar improved user experience
+
+[33mcommit d1baaffb2db25019006b805b4ebc99a27f665da0[m
+Author: Michael Obubelebra Amachree <amachree9630@gmail.com>
+Date:   Wed Jul 24 08:15:56 2024 +0100
+
+    📦️: Add Tailwind CSS configuration
+    
+    - Added a Tailwind CSS configuration file (tailwind.config.ts) to customize the theme and extend the default styles
+    
+    - Updated the svelte.config.js to components in the src/lib the Navbar component in the +page layout to display page.
+
+[33mcommit 127705dca6195fe0d82dafd5e3ba3c522334b4c9[m
+Author: Michael Obubelebra Amachree <amachree9630@gmail.com>
+Date:   Wed Jul 24 07:27:38 2024 +0100
+
+    🎨: Develop a pixel-perfect landing page for Dh PRD for the overview and design reference.
+    
+    ## 📝: Project Specifications
+    - Specify the development tools and deliverables for the project.
+    - Outline the development process with UI component development, layout and routing, content integration, responsiveness code quality and maintainability practices.
+    - Set success criteria for the landing page development.
+    - Include additional notes for future functionalities and features.
+
+[33mcommit 21adf72761301afd422b1f26193450a1c3a077ff[m
+Author: Michael Obubelebra Amachree <amachree9630@gmail.com>
+Date:   Wed Jul 24 07:21:03 2024 +0100
+
+    Initial commit
+
+[33mcommit 458b7e519cb6adb91fb02791e20a8d1440a939c6[m
+Author: Michael Obubelebra Amachree <amachree9630@gmail.com>
+Date:   Tue Jul 23 19:30:20 2024 +0100
+
+    Initial commit
