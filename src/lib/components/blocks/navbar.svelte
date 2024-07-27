@@ -21,7 +21,7 @@
 </script>
 
 <nav class="fixed start-0 top-0 z-20 w-full bg-white dark:border-gray-600 dark:bg-gray-900">
-	<div class="mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between p-4">
+	<div class="mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between p-8 mr-10 ml-10">
 		<a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
 			<span class="size-6">
 				<Dhara />

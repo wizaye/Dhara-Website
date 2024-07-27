@@ -45,7 +45,7 @@
 			<MobileLeft />
 		</div>
 		<div class="xl:mt-[3.4vw]">
-			<p class="max-w-2xl text-center text-sm font-normal text-gray-500 lg:text-lg">
+			<p class="max-w-auto text-center text-sm font-normal text-stone-500 lg:text-lg">
 				Transforming Supply Chain Finance with Programmable Digital Assets. Bridging the Liquidity
 				Gap in Global Supply Chains.
 			</p>
