@@ -18,8 +18,9 @@
 		<IconWrapper>
 			<Cart />
 		</IconWrapper>
+
 		<h1
-			class="mx-auto mb-4 mt-5 text-center text-4xl font-sans leading-10 text-black md:text-3xl lg:mt-8 lg:text-6xl"
+			class="mx-auto mb-4 mt-5 text-center text-2xl font-bold text-black md:text-3xl lg:mt-8 lg:text-6xl lg:text-gray-500"
 		>
 			Deep Financing Tokens
 		</h1>
@@ -30,7 +31,7 @@
 
 	<div class="mb-4">
 		<p
-			class="text-dharateal mx-auto mb-4 text-center text-2xl md:text-3xl lg:mt-8 lg:text-6xl"
+			class="text-dharateal mx-auto mb-4 text-center text-2xl md:text-3xl lg:mt-8 lg:text-6xl lg:text-gray-500"
 		>
 			A Fintech Innovation
 		</p>
