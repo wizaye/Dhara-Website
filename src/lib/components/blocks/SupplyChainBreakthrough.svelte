@@ -41,7 +41,7 @@
 </script>
 
 <!-- Bottleneck section -->
-<section class="">
+<section class="px-20">
 	<button
 		class="mx-auto flex w-fit justify-center space-x-3 rounded-md border border-dharateal p-2 uppercase"
 	>
