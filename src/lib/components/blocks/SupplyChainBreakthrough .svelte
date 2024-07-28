@@ -1,10 +1,12 @@
 <script lang="ts">
 	import BottleneckMobile from '@/components/blocks/BottleneckMobile.svelte';
+	import BottleneckDesktop from '@/components/blocks/BottleneckDesktop.svelte';
 	import { Info } from 'lucide-svelte';
 	import Fin from '@/img/fin.svelte';
 	import Bar from '@/img/bar.svelte';
 	import Dom from '@/img/dom.svelte';
 	import Store from '@/img/store.svelte';
+	import * as Carousel from '$lib/components/ui/carousel/index.js';
 
 	const content = [
 		{
@@ -35,7 +37,7 @@
 </script>
 
 <!-- Bottleneck section -->
-<section class="container">
+<section class="">
 	<button
 		class="mx-auto flex w-fit justify-center space-x-3 rounded-md border border-dharateal p-2 uppercase"
 	>
@@ -67,6 +69,35 @@
 				</p>
 			</BottleneckMobile>
 		{/each}
+	</div>
+	<div class="relative mx-auto hidden w-fit justify-center px-12 md:flex">
+		<Carousel.Root class="flex items-stretch px-20">
+			<Carousel.Content>
+				{#each content as { heading, body, border, iconColor }, i}
+					<Carousel.Item class="basis-1/3">
+						<BottleneckDesktop {border} {iconColor}>
+							<svelte:fragment slot="icon">
+								{#if i == 0}
+									<Fin />
+								{:else if i == 1}
+									<Bar />
+								{:else if i == 2}
+									<Dom />
+								{:else if i == 3}
+									<Store />
+								{/if}
+							</svelte:fragment>
+							<h3 slot="heading">{heading}</h3>
+							<p slot="body">
+								{body}
+							</p>
+						</BottleneckDesktop>
+					</Carousel.Item>
+				{/each}
+			</Carousel.Content>
+			<Carousel.Previous class="absolute left-[80vw] top-0 rounded-md border border-green-800" />
+			<Carousel.Next class="absolute left-[83vw] top-0 rounded-md border border-green-800" />
+		</Carousel.Root>
 	</div>
 </section>
 <!-- End of Bottleneck section -->
