@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SupplyChainBreakthrough from '@/components/blocks/SupplyChainBreakthrough .svelte';
+	import SupplyChainBreakthrough from '@/components/blocks/SupplyChainBreakthrough.svelte';
 	import DFTFeaturesOverview from '@/components/blocks/DFTFeaturesOverview.svelte';
 	import MainHeaderSection from '@/components/blocks/MainHeaderSection.svelte';
 	import DftFeaturesCont from '@/components/blocks/DFTFeaturesCont.svelte';

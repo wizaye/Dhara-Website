@@ -12,26 +12,30 @@
 		{
 			heading: 'Financial Ecosystems',
 			body: "There is a growing demand for financial models including all in supply chain, enabling smaller vendors' access to capital for growth.",
-			border: 'pink',
-			iconColor: 'EBF5EB'
+			border: 'border-green-500',
+			borderDesktop: 'hover:border-green-500',
+			iconColor: 'bg-[#EBF5EB]'
 		},
 		{
 			heading: 'Liquidity Opportunity',
 			body: 'Democratizing liquidity access empowers the supply chain, fostering stability, innovation, and a resilient market ecosystem.',
-			border: 'purple',
-			iconColor: 'F2EEFE'
+			border: 'border-purple-500',
+			borderDesktop: 'hover:border-purple-500',
+			iconColor: 'bg-[#F2EEFE]'
 		},
 		{
 			heading: 'Traditional Financing Dominance',
 			body: 'Conventional financial systems favor larger, established companies, leaving smaller suppliers in the supply chain with few options and higher costs.',
-			border: 'red',
-			iconColor: 'DFEEFF'
+			border: 'border-red-500',
+			borderDesktop: 'hover:border-red-500',
+			iconColor: 'bg-[#DFEEFF]'
 		},
 		{
 			heading: 'Restricted Vendor Access',
 			body: 'Tier 263 vendor often face hurdles securing finance, leading to cash flow constraints that hamper their operational capabilities and growth potential.',
-			border: 'orange',
-			iconColor: 'FAF0E6'
+			border: 'border-orange-500',
+			borderDesktop: 'hover:border-orange-500',
+			iconColor: 'bg-[#FAF0E6]'
 		}
 	];
 </script>
@@ -49,7 +53,7 @@
 	>
 		The Bottleneck in Traditional Supply Chain Finance
 	</h2>
-	<div class="md:hidden">
+	<div class="lg:hidden">
 		{#each content as { heading, body, border, iconColor }, i}
 			<BottleneckMobile {border} {iconColor}>
 				<svelte:fragment slot="icon">
@@ -70,12 +74,12 @@
 			</BottleneckMobile>
 		{/each}
 	</div>
-	<div class="relative mx-auto hidden w-fit justify-center px-12 md:flex">
+	<div class="relative mx-auto hidden w-fit justify-center px-12 lg:flex">
 		<Carousel.Root class="flex items-stretch px-20">
 			<Carousel.Content>
-				{#each content as { heading, body, border, iconColor }, i}
+				{#each content as { heading, body, borderDesktop, iconColor }, i}
 					<Carousel.Item class="basis-1/3">
-						<BottleneckDesktop {border} {iconColor}>
+						<BottleneckDesktop border={borderDesktop} {iconColor}>
 							<svelte:fragment slot="icon">
 								{#if i == 0}
 									<Fin />

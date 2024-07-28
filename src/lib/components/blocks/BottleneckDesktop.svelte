@@ -1,12 +1,12 @@
 <script lang="ts">
 	export let border: string = '';
-	export let iconColor: string = 'EBF5EB';
+	export let iconColor: string = '';
 </script>
 
 <div
-	class="flex h-[40vh] flex-col rounded-2xl border-b-[20px] border-{border}-500 bg-white p-4 drop-shadow-lg"
+	class="flex h-full min-h-[45vh] flex-col rounded-3xl border-b-[20px] transition-colors {border}  bg-white p-4 drop-shadow-md"
 >
-	<div class="mb-16 mt-3 size-fit rounded-lg bg-[#{iconColor}] p-2">
+	<div class="mb-16 mt-3 size-fit rounded-lg {iconColor} p-2">
 		<slot name="icon" />
 	</div>
 	<div class="my-5 text-xl">
