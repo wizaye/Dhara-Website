@@ -1,43 +1,63 @@
 <script lang="ts">
-	import DFTFeaturesOverview from './DFTFeaturesOverview.svelte';
-	import MainHeaderSection from './MainHeaderSection.svelte';
-	import DftFeaturesCont from './DFTFeaturesCont.svelte';
-	import { ScrollText, Shrink, Puzzle, ClockArrowUp, SearchCheck, Info } from 'lucide-svelte';
+	import SupplyChainBreakthrough from '@/components/blocks/SupplyChainBreakthrough .svelte';
+	import DFTFeaturesOverview from '@/components/blocks/DFTFeaturesOverview.svelte';
+	import MainHeaderSection from '@/components/blocks/MainHeaderSection.svelte';
+	import DftFeaturesCont from '@/components/blocks/DFTFeaturesCont.svelte';
 	import Footer from '@/components/blocks/footer.svelte';
 	import Scroller from '@/components/blocks/scroller.svelte';
-	import Faq from './FAQ.svelte';
-	import Fin from '@/img/fin.svelte';
+	import Faq from '@/components/blocks/FAQ.svelte';
 </script>
 
-<MainHeaderSection />
-<section class="container">
-	<button
-		class="border-dharateal mx-auto flex w-fit justify-center space-x-3 rounded-md border p-2 uppercase"
-	>
-		<Info class="text-dharateal" />
-		<p>problems</p>
-	</button>
-	<h2
-		class="mx-auto max-w-lg py-3 text-center text-3xl tracking-tight lg:mx-0 lg:max-w-md lg:text-left lg:text-4xl"
-	>
-		The Bottleneck in Traditional Supply Chain Finance
-	</h2>
-	<div
-		class="flex flex-col rounded-2xl border-b-[20px] border-green-500 bg-white p-4 drop-shadow-md"
-	>
-		<div class="mb-6 mt-3 size-fit rounded-lg bg-[#EBF5EB] p-2">
-			<Fin />
-		</div>
-		<h3 class="my-5 text-2xl">Financial Ecosystems</h3>
-		<p class="text-gray-500">
-			There is a growing demand for financial models including all in supply chain, enabling smaller
-			vendors' access to capital for growth
-		</p>
-	</div>
-</section>
+<svelte:head>
+	<title>Dhara | Revolutionizing Supply Chain Financing</title>
+	<meta
+		name="description"
+		content="Explore Dhara's innovative solutions for supply chain financing, designed to empower businesses and streamline operations."
+	/>
+	<meta
+		name="keywords"
+		content="supply chain financing, Dhara, financial solutions, innovation, business growth"
+	/>
 
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://dhara-website.netlify.app/" />
+	<meta property="og:title" content="Dhara | Revolutionizing Supply Chain Financing" />
+	<meta
+		property="og:description"
+		content="Explore Dhara's innovative solutions for supply chain financing, designed to empower businesses and streamline operations."
+	/>
+	<!-- Replace this later -->
+	<meta property="og:image" content="URL_TO_IMAGE_ON_YOUR_SITE" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://dhara-website.netlify.app/" />
+	<meta property="twitter:title" content="Dhara | Revolutionizing Supply Chain Financing" />
+	<meta
+		property="twitter:description"
+		content="Explore Dhara's innovative solutions for supply chain financing, designed to empower businesses and streamline operations."
+	/>
+	<!-- Replace this later -->
+	<meta property="twitter:image" content="URL_TO_IMAGE_ON_YOUR_SITE" />
+
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"url": "https://dhara-website.netlify.app/",
+			"name": "Dhara",
+			"logo": "URL_TO_LOGO",
+			"description": "Dhara provides innovative solutions for supply chain financing, empowering businesses with efficient and effective financial strategies."
+		}
+	</script>
+</svelte:head>
+
+<MainHeaderSection />
+<SupplyChainBreakthrough />
 <DFTFeaturesOverview />
 <DftFeaturesCont />
-<Faq/>
+<Faq />
 <Footer />
 <Scroller />

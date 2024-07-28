@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Dft from '@/img/DFT.svelte';
 	import FeatureCard from './FeatureCard.svelte';
-
 	import Sec3 from '@/img/Sec3.svelte';
 	import { ScrollText, Shrink, Puzzle, ClockArrowUp, SearchCheck } from 'lucide-svelte';
 </script>
