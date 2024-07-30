@@ -26,8 +26,8 @@
 		{
 			heading: 'Traditional Financing Dominance',
 			body: 'Conventional financial systems favor larger, established companies, leaving smaller suppliers in the supply chain with few options and higher costs.',
-			border: 'border-red-500',
-			borderDesktop: 'hover:border-red-500',
+			border: 'border-blue-600',
+			borderDesktop: 'hover:border-blue-600',
 			iconColor: 'bg-[#DFEEFF]'
 		},
 		{
@@ -41,7 +41,7 @@
 </script>
 
 <!-- Bottleneck section -->
-<section class="px-20">
+<section class="overflow-hidden px-20 py-10 max-md:px-10">
 	<button
 		class="mx-auto flex w-fit justify-center space-x-3 rounded-md border border-dharateal p-2 uppercase"
 	>
@@ -74,8 +74,8 @@
 			</BottleneckMobile>
 		{/each}
 	</div>
-	<div class="relative mx-auto hidden w-fit justify-center px-12 lg:flex">
-		<Carousel.Root class="flex items-stretch px-20">
+	<div class="relative mx-auto hidden w-fit justify-center lg:flex">
+		<Carousel.Root class="flex items-stretch">
 			<Carousel.Content>
 				{#each content as { heading, body, borderDesktop, iconColor }, i}
 					<Carousel.Item class="basis-1/3">
@@ -105,3 +105,4 @@
 	</div>
 </section>
 <!-- End of Bottleneck section -->
+
